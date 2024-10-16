@@ -1,6 +1,20 @@
-<h1>Edit Airport: {{ aeroport.nom }}</h1>
+{# templates/aeroport/edit.html.twig #}
 
-{{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button type="submit">Update</button>
-{{ form_end(form) }}
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Airport: {{ aeroport.nom }}{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="edit-form-container">
+        <h1>Edit Airport: {{ aeroport.nom }}</h1>
+
+        {{ form_start(form) }}
+            {{ form_widget(form) }}
+            <button type="submit">Update</button>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

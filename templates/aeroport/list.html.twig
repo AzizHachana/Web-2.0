@@ -16,6 +16,7 @@
                 <th>ID</th>
                 <th>Name</th>
                 <th>City</th>
+                <th>Actions</th> {# New column for the Update button #}
             </tr>
         </thead>
         <tbody>
@@ -24,6 +25,9 @@
                     <td>{{ aeroport.id }}</td>
                     <td>{{ aeroport.nom }}</td>
                     <td>{{ aeroport.ville }}</td>
+                    <td>
+                        <a href="{{ path('aeroport_edit', {id: aeroport.id}) }}" class="btn-update">Update</a>
+                    </td>
                 </tr>
             {% endfor %}
         </tbody>

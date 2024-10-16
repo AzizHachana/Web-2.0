@@ -70,3 +70,78 @@
         width: 100%;
     }
 }
+/* Form container for the edit form */
+.edit-form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form title */
+.edit-form-container h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Form fields styling */
+.edit-form-container input[type="text"],
+.edit-form-container select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Button styling */
+.edit-form-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.edit-form-container button:hover {
+    background-color: #45a049;
+}
+
+/* Adding some focus effect for form fields */
+.edit-form-container input[type="text"]:focus,
+.edit-form-container select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    .edit-form-container {
+        padding: 15px;
+    }
+
+    .edit-form-container h1 {
+        font-size: 20px;
+    }
+
+    .edit-form-container button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
