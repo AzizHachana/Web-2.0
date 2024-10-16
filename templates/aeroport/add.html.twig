@@ -1,0 +1,20 @@
+{# templates/aeroport/new.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Add a New Airport{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="form-container">
+        <h1>Add a New Airport</h1>
+        {{ form_start(form) }}
+            {{ form_widget(form.nom, {'attr': {'placeholder': 'Airport Name'}}) }}
+            {{ form_widget(form.ville) }}
+            <button type="submit">Save</button>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

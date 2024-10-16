@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Update Author{% endblock %}
+
+{% block body %}
+    <h1>Update Author</h1>
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <button class="btn">Update</button>
+    {{ form_end(form) }}
+
+    <a href="{{ path('author_index') }}">Back to list</a>
+{% endblock %}

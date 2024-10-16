@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AuteurController!{% endblock %}
+
+{% block body %}
+    {% if auteur %}
+    <div> 
+        {{auteur.username}}
+        {{auteur.email}}
+    </div>
+    {% endif %}
+{% endblock %}

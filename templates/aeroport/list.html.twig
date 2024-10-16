@@ -1,0 +1,31 @@
+{# templates/aeroport/list.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}List of Airports{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+{% endblock %}
+
+{% block body %}
+    <h1>List of Airports</h1>
+    <table class="airport-list">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for aeroport in aeroports %}
+                <tr>
+                    <td>{{ aeroport.id }}</td>
+                    <td>{{ aeroport.nom }}</td>
+                    <td>{{ aeroport.ville }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

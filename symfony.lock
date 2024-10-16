@@ -209,7 +209,7 @@
         ]
     },
     "symfony/stimulus-bundle": {
-        "version": "2.20",
+        "version": "2.19",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "main",
@@ -249,7 +249,7 @@
         ]
     },
     "symfony/ux-turbo": {
-        "version": "v2.20.0"
+        "version": "v2.19.3"
     },
     "symfony/validator": {
         "version": "6.4",
